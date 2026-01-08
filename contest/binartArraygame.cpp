@@ -11,7 +11,7 @@ int main() {
         for(int i = 0; i < n; i++){
             int x;
             cin >> x;
-            if(x==0)hasZero++;
+            if(x==0)hasZero = true;
         }
         if(hasZero) cout << "Alice\n";
         else cout << "Bob\n";
