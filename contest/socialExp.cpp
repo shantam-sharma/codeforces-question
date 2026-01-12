@@ -7,14 +7,18 @@ int main() {
     while(t--){
         int n;
         cin >> n;
-        if(n == 2){
-            cout << 2 << endl;
-            continue;
+        if (n == 2) {
+            cout << 2 << "\n";
         }
-        int split = n % 3;
-        if(split == 0)cout << 0 << endl;
-        else if(split == 1)cout << 2 << endl;
-        else cout << 1 << endl;
+        else if (n == 3) {
+            cout << 3 << "\n";
+        }
+        else if (n % 2 == 0) {
+            cout << 0 << "\n";
+        }
+        else {
+            cout << 1 << "\n";
+        }
     }
     return 0;
 }
