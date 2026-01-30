@@ -24,7 +24,6 @@ int main() {
                 i++;
                 continue;
             }
-            // start of zero segment
             int l = i;
             while (i < n && s[i] == '0') i++;
             int r = i - 1;
@@ -44,6 +43,5 @@ int main() {
 
         cout << initial + add << '\n';
     }
-
     return 0;
 }
